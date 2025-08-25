@@ -1,0 +1,30 @@
+.animal-list {
+  display: inline-block;
+  background-color: #a52a2a;
+  padding: 5px;
+}
+.animal-list * {
+  font-family: "Times New Roman", Times, serif;
+  color: #f5f5f5;
+}
+.animal-list h4 {
+  font-size: 1.5em;
+}
+table,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td {
+  padding: 1vh 2vw 1vh 1vw;
+}
+.animal-search-link {
+  color: blue;
+  text-decoration: underline;
+}
+.animal-search-link:hover {
+  color: darkblue;
+}
+.animal-search-link:visited {
+  color: indigo;
+}

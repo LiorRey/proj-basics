@@ -1,0 +1,25 @@
+.count-down {
+  /* Box model */
+  display: block; /* ensure it's a block element */
+  box-sizing: border-box; /* padding included in width */
+  width: 30vw; /* 30% of viewport width */
+  max-width: 500px; /* prevent it from being too wide */
+  min-width: 350px; /* prevent it from being too small */
+  padding: 1rem 2rem; /* space inside the box */
+
+  /* Border & background */
+  border: 15px double #4d20f0;
+  background-color: #add8e6;
+
+  /* Text */
+  text-align: center; /* center text horizontally */
+}
+.count-down * {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-size: 1.5em;
+  color: #4d20f0;
+}
+.last-six-seconds {
+  color: #ee4183;
+}

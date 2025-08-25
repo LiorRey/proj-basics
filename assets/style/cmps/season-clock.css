@@ -1,0 +1,18 @@
+.season-clock {
+  display: inline-block;
+  background-color: #add8e5;
+  text-align: center;
+  padding-inline: 1vw;
+}
+.season-clock * {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+.season-clock h4 {
+  font-size: 1.5em;
+}
+.dark,
+.dark * {
+  background-color: #00008c;
+  color: white;
+}
