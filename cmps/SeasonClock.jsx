@@ -45,6 +45,12 @@ export function SeasonClock() {
 
   const monthName = nowDate.toLocaleString("en-US", { month: "long" })
   const seasonName = _getSeasonName(nowDate.getMonth())
+  const seasonImages = {
+    Spring: "./assets/img/season-imgs/spring.png",
+    Summer: "./assets/img/season-imgs/summer.png",
+    Autumn: "./assets/img/season-imgs/autumn.png",
+    Winter: "./assets/img/season-imgs/winter.png",
+  }
   const weekdayName = nowDate.toLocaleString("en-US", { weekday: "long" })
   const nowDateTimeRef = nowDate.toLocaleTimeString([], {
     hour12: false,
@@ -75,7 +81,7 @@ export function SeasonClock() {
           {monthName} ({seasonName})
         </h4>
         <img
-          src={`./assets/img/season-imgs/${seasonName.toLowerCase()}.png`}
+          src={seasonImages[seasonName]}
           alt={seasonName}
           title={seasonName}
         />
