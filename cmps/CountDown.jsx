@@ -1,7 +1,7 @@
 const { useState, useEffect, useRef } = React
 
 export function CountDown({ toTime, startFrom = 10, onDone }) {
-  const [timer, setTimer] = useState(_determineInitialTimer())
+  const [timer, setTimer] = useState(_determineInitialTimer)
   const intervalIdRef = useRef()
 
   useEffect(() => {
