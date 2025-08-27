@@ -1,4 +1,4 @@
-const { useState, useEffect, useRef } = React
+const { useState, useEffect } = React
 
 // let isDark = false
 export function SeasonClock() {

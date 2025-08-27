@@ -2,6 +2,7 @@ import { AnimalList } from "./AnimalList.jsx"
 import { SeasonClock } from "./SeasonClock.jsx"
 import { CountDown } from "./CountDown.jsx"
 import { WatcherApp } from "./WatcherApp.jsx"
+import { MouseMonitor } from "./MouseMonitor.jsx"
 
 const { useState, useEffect } = React
 
@@ -69,6 +70,11 @@ export function Home() {
       <section>
         <h3>Watcher App</h3>
         <WatcherApp />
+      </section>
+      <hr />
+      <section>
+        <h3>Mouse Monitor (bottom-right corner of the page)</h3>
+        <MouseMonitor />
       </section>
     </React.Fragment>
   )
