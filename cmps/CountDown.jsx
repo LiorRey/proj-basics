@@ -6,11 +6,7 @@ export function CountDown({ toTime, startFrom = 10, onDone }) {
 
   useEffect(() => {
     intervalIdRef.current = setInterval(() => {
-      if (toTime) {
-        setTimer(timer => Math.max(timer - 1000, 0))
-      } else {
-        setTimer(timer => Math.max(timer - 1000, 0))
-      }
+      setTimer(timer => Math.max(timer - 1000, 0))
       //   setTimer(timer => timer - 1)
     }, 1000)
 
